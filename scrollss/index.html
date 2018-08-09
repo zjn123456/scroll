@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=Edge,chrome=1.0">
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="icon/iconfont.css">
+</head>
+<body>
+	<header class="header">
+	   <div class="main">
+		<div class="nav iscroll">
+		  <ul>
+           <li>推荐</li>
+	       <li>新闻</li>
+	       <li>娱乐</li>
+	       <li>体育</li>
+	       <li>图片</li>
+	       <li>财经</li>
+	       <li>推荐</li>
+	       <li>新闻</li>
+	       <li>娱乐</li>
+	       <li>体育</li>
+	       <li>图片</li>
+	       <li>财经</li>
+	       <li>图片</li>
+	       <li>财经</li>
+	       <li>推荐</li>
+	       <li>新闻</li>
+	       <li>娱乐</li>
+	       <li>体育</li>
+	       <li>图片</li>
+	       <li>财经</li>
+         </ul>
+		</div>
+		<div class="right"><span class="iconfont"></span></div>
+      </div>
+	</header>
+	<section>
+		
+	</section>
+	<footer>
+		
+	</footer>
+</body>
+</html>
+<script src="js/iscroll5.js"></script>
+<script src="js/zepto.min.js"></script>
+<script>
+    var main=document.querySelector('.main');
+    var lis=main.querySelectorAll('li');
+    var ul=main.querySelector('ul')
+    var sum=0;
+    for(var i=0;i<lis.length;i++){
+        sum+=lis[i].offsetWidth;
+    }
+     ul.style.width=sum+'px';
+	var Iscroll=new IScroll('.nav',{
+		scrollY:false,
+		scrollX:true,
+		scrollbars:true
+	})
+</script>
